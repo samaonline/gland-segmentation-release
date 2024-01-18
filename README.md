@@ -9,9 +9,9 @@ This released repository implements [Quantifying Meibomian Gland Morphology Usin
 - use pip install if you miss any dependencies
 
 ## Data and the Trained model
-We are not releasing the training data at this moment. However we are providing a sample set that you can run and validate results. See sample set [here](./sample_data).
+We are not releasing the training data to the public at this moment. However we are providing a sample set that you can run and validate results. See sample set [here](./sample_data). 
 
-To download the trained model, please fill [this form](https://forms.gle/JnzUgCWG34E71rK8A).
+To download the trained model, please fill [this form](https://forms.gle/JnzUgCWG34E71rK8A). Note that we will provide you with both upper lid and lower lid segmentation model.
 
 ## Cutomized for your own data
 If you want to work on your own data, change `data_path` and `raw_dir` in [create_annotations.py](./data/scripts/create_annotations.py) accordingly. 
@@ -22,6 +22,8 @@ python data/scripts/create_annotations.py
 ```
 
 ## Training
+We are training upper and lower lid segmentation separately.
+
 Run the following:
 ```
 cd code
